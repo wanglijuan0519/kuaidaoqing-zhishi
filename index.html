@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>快刀青知识库 — 索引</title>
+<title>快刀青知识库 — 完整指南</title>
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
   body { 
@@ -11,123 +11,207 @@
     background: #f5f5f0; color: #222; line-height: 1.7; font-size: 16px;
   }
   .container { max-width: 900px; margin: 40px auto; padding: 0 24px; }
-  h1 { font-size: 28px; margin-bottom: 8px; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
   h2 { font-size: 22px; margin: 40px 0 16px; padding-bottom: 8px; border-bottom: 2px solid #333; }
+  h3 { font-size: 18px; margin: 24px 0 12px; color: #444; }
   .subtitle { color: #666; font-size: 14px; margin-bottom: 32px; }
-  table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+  
+  table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.08); margin-bottom: 32px; }
   th { background: #222; color: #fff; font-weight: 600; text-align: left; padding: 12px 16px; font-size: 15px; }
   td { padding: 12px 16px; border-bottom: 1px solid #eee; vertical-align: top; }
   tr:last-child td { border-bottom: none; }
-  tr:hover td { background: #fafaf5; }
-  .name { font-weight: 600; white-space: nowrap; }
-  .eng { color: #888; font-size: 14px; }
-  .cn { font-size: 16px; }
-  .desc { color: #444; }
-  .bold { font-weight: 700; }
-  .note { margin-top: 24px; color: #999; font-size: 13px; }
-  .group { margin-bottom: 32px; }
-  .group h3 { font-size: 17px; margin-bottom: 10px; color: #555; }
-  td:first-child, th:first-child { min-width: 140px; }
-  td:nth-child(2), th:nth-child(2) { min-width: 160px; }
+  .en { color: #888; font-size: 13px; display: block; margin-top: 2px; }
+  .tag { display: inline-block; background: #eee; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin-right: 4px; }
+  
+  .guide-box { background: #fff; border-left: 4px solid #333; padding: 20px 24px; margin: 16px 0 24px; border-radius: 0 8px 8px 0; }
+  .guide-box p { margin-bottom: 12px; }
+  .guide-box p:last-child { margin-bottom: 0; }
+  
+  .question-type { background: #fff; padding: 20px 24px; margin: 16px 0; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+  .question-type h4 { font-size: 16px; margin-bottom: 8px; }
+  .example { color: #555; font-style: italic; margin-left: 16px; padding: 4px 0; }
+  .example:before { content: "> "; color: #999; }
+  
+  .nav { margin-bottom: 40px; }
+  .nav a { display: inline-block; padding: 6px 16px; margin-right: 8px; background: #333; color: #fff; text-decoration: none; border-radius: 4px; font-size: 14px; }
+  .nav a:hover { background: #555; }
+  
+  .highlight { background: #fff3cd; padding: 2px 6px; border-radius: 3px; }
+  
+  .section-desc { color: #666; font-size: 14px; margin-bottom: 20px; }
+  
+  @media (max-width: 600px) {
+    .container { padding: 0 16px; }
+    td, th { padding: 8px 12px; font-size: 14px; }
+  }
 </style>
 </head>
 <body>
 <div class="container">
 
-<h1>🗂️ 快刀青知识库 — 索引</h1>
-<p class="subtitle">来源：高质量人类谈话库 · 制表 2026-05-04</p>
+<h1>快刀青知识库 — 完整指南</h1>
+<p class="subtitle">来源：高质量人类谈话库 · 盯人日报 #058-#062 · 2026-05-03 整理</p>
 
-<!-- ========== 人名词典 ========== -->
-<h2>一、人名词典</h2>
-
-<div class="group">
-<h3>🇨🇳 中文名</h3>
-<table>
-<tr><th>姓名</th><th>身份</th><th>机构是做什么的</th></tr>
-<tr><td class="name">快刀青衣</td><td>得到联合创始人、知识库创建者</td><td class="desc">—</td></tr>
-<tr><td class="name">梁文锋</td><td>DeepSeek 创始人</td><td class="desc"><span class="bold">DeepSeek</span>：开源大模型公司，V4 系列以极低定价冲击全球 AI 市场</td></tr>
-<tr><td class="name">罗福莉</td><td>小米大模型团队负责人</td><td class="desc">小米：手机+IoT+汽车，负责 MiMo 大模型系列</td></tr>
-<tr><td class="name">洪乐潼</td><td>Axiom 创始人（00后广州女孩）</td><td class="desc"><span class="bold">Axiom</span>：用数学形式化验证让 AI 推理可验证，成立不到一年估值 $16 亿</td></tr>
-<tr><td class="name">陶哲轩</td><td>数学家，UCLA 教授</td><td class="desc">—</td></tr>
-<tr><td class="name">汪滔</td><td>大疆创新创始人</td><td class="desc">大疆：全球消费级无人机市占率超 70%</td></tr>
-<tr><td class="name">吴恩达</td><td>DeepLearning.AI 创始人</td><td class="desc">DeepLearning.AI：AI 在线教育平台</td></tr>
-<tr><td class="name">肖弘</td><td>Manus AI 创始人</td><td class="desc">Manus AI：AI Agent 产品，被 Meta 收购后遭中国封杀</td></tr>
-<tr><td class="name">杨植麟</td><td>Moonshot AI（月之暗面）创始人</td><td class="desc"><span class="bold">Moonshot AI</span>：Kimi 大模型母公司，$180 亿估值，正在解散海外 VIE 回归中国</td></tr>
-<tr><td class="name">张小珺</td><td>商业访谈录主持人</td><td class="desc">—</td></tr>
-<tr><td class="name">唐杰</td><td>智谱 AI</td><td class="desc"><span class="bold">智谱</span>：国产大模型公司，发布 GLM-5V-Turbo 多模态 Coding 模型</td></tr>
-</table>
+<div class="nav">
+  <a href="#usage">使用方法</a>
+  <a href="#asking">怎么提问</a>
+  <a href="#people">人名索引</a>
+  <a href="#concepts">概念索引</a>
 </div>
 
-<div class="group">
-<h3>🌐 英文名</h3>
-<table>
-<tr><th>英文名</th><th>中文译名</th><th>身份</th><th>机构是做什么的</th></tr>
-<tr><td class="name eng">Andrej Karpathy</td><td class="cn">安德烈·卡帕西</td><td>前 OpenAI / Tesla AI 负责人</td><td class="desc">—</td></tr>
-<tr><td class="name eng">Aravind Srinivas</td><td class="cn">阿拉文德·斯里尼瓦斯</td><td>Perplexity CEO</td><td class="desc"><span class="bold">Perplexity</span>：AI 搜索引擎，对标 Google，产品叫 Personal Computer</td></tr>
-<tr><td class="name eng">Cat Wu</td><td class="cn">卡特·吴</td><td>Anthropic 产品负责人</td><td class="desc">Anthropic：Claude 大模型母公司，ARR $300 亿</td></tr>
-<tr><td class="name eng">Dario Amodei</td><td class="cn">达里奥·阿莫迪</td><td>Anthropic CEO</td><td class="desc">—</td></tr>
-<tr><td class="name eng">David Silver</td><td class="cn">大卫·席尔瓦</td><td>Ineffable Intelligence 创始人</td><td class="desc"><span class="bold">Ineffable Intelligence</span>：Silver 的新公司（$11 亿种子轮），主张 AI Agent 在模拟环境自主学习，不走 LLM 路线。Silver 是 AlphaGo 核心研发者</td></tr>
-<tr><td class="name eng">Demis Hassabis</td><td class="cn">德米斯·哈萨比斯</td><td>Google DeepMind CEO</td><td class="desc">DeepMind：AlphaGo/AlphaFold 诞生地，2024 诺贝尔化学奖</td></tr>
-<tr><td class="name eng">Elon Musk</td><td class="cn">埃隆·马斯克</td><td>xAI / Tesla / SpaceX</td><td class="desc">xAI：Musk 的 AI 公司，发布 Grok 系列模型</td></tr>
-<tr><td class="name eng">François Chollet</td><td class="cn">弗朗索瓦·肖莱</td><td>ARC Prize Foundation</td><td class="desc"><span class="bold">ARC Prize Foundation</span>：AGI 评测机构。ARC-AGI-3 测试让顶级模型全灭（<1%），人类轻松 100%</td></tr>
-<tr><td class="name eng">Greg Brockman</td><td class="cn">格雷格·布罗克曼</td><td>OpenAI 总裁</td><td class="desc">OpenAI：GPT/ChatGPT 母公司，ARR $250 亿</td></tr>
-<tr><td class="name eng">Ilya Sutskever</td><td class="cn">伊利亚·苏茨克维</td><td>SSI 创始人</td><td class="desc"><span class="bold">SSI</span>（Safe Superintelligence Inc.）：Sutskever 2024 年从 OpenAI 出走后创办，专注安全的超级智能，至今无公开产品</td></tr>
-<tr><td class="name eng">Jensen Huang</td><td class="cn">黄仁勋</td><td>NVIDIA CEO</td><td class="desc">NVIDIA：AI 芯片霸主，GPU 市占率超 80%，市值 $5 万亿+</td></tr>
-<tr><td class="name eng">Jim Fan</td><td class="cn">范嘉辉</td><td>NVIDIA 具身智能负责人</td><td class="desc">—</td></tr>
-<tr><td class="name eng">Mark Zuckerberg</td><td class="cn">马克·扎克伯格</td><td>Meta CEO</td><td class="desc">Meta：Facebook/Instagram/WhatsApp，Llama 开源模型</td></tr>
-<tr><td class="name eng">Martin Casado</td><td class="cn">马丁·卡萨多</td><td>a16z 合伙人</td><td class="desc">a16z：硅谷顶级风投，AI 基础设施 $17 亿投资组合</td></tr>
-<tr><td class="name eng">Sam Altman</td><td class="cn">山姆·奥特曼</td><td>OpenAI CEO</td><td class="desc">—</td></tr>
-<tr><td class="name eng">Sarah Wang</td><td class="cn">莎拉·王</td><td>a16z 增长投资合伙人</td><td class="desc">—</td></tr>
-</table>
+<!-- ════════════════════════════════════════════ -->
+<h2 id="usage">一、知识库怎么用</h2>
+<div class="section-desc">快刀青衣设计：知识库是给 AI 助手读的。你的角色不是读者，是提问者。</div>
+
+<div class="guide-box">
+  <p><strong>📰 自动推送（周一三五早 9:00）</strong><br>
+  重要人物动态 + 跨篇关联问题。有料才推，无则安静，不凑数。</p>
 </div>
 
-<!-- ========== 概念词典 ========== -->
-<h2>二、概念词典</h2>
-
-<div class="group">
-<h3>🔑 核心概念</h3>
-<table>
-<tr><th>英文</th><th>中文</th><th>一句话解释</th></tr>
-<tr><td class="name eng">Bootstrap Effect</td><td class="cn">自举效应</td><td class="desc">好模型帮你造更好的模型，飞轮越转越快，后来者追赶窗口快速关闭</td></tr>
-<tr><td class="name eng">Capital Flywheel</td><td class="cn">资本飞轮</td><td class="desc">融资→算力→突破→产品→用户→更大融资，AI 领域史无前例</td></tr>
-<tr><td class="name eng">Software 3.0</td><td class="cn">软件 3.0</td><td class="desc">Karpathy 命题：上下文窗口即程序，编程从"写代码"变成"委派宏操作"</td></tr>
-<tr><td class="name eng">Agentic Engineering</td><td class="cn">智能体工程</td><td class="desc">不写代码，用自然语言把任务委派给 AI Agent，人负责审查</td></tr>
-<tr><td class="name eng">Vibe Coding</td><td class="cn">氛围编程</td><td class="desc">用自然语言让 AI 写代码，Karpathy 后来承认代码"awkward/gross"</td></tr>
-</table>
+<div class="guide-box">
+  <p><strong>🔍 单人物追踪</strong><br>
+  你想谁就问谁——不用翻五天日报找同一个人的条目。<br>
+  例：「Karpathy 最近一个月说了什么？」「杨植麟现在什么处境？」</p>
 </div>
 
-<div class="group">
-<h3>⚙️ 技术概念</h3>
-<table>
-<tr><th>英文</th><th>中文</th><th>一句话解释</th></tr>
-<tr><td class="name eng">Formal Verification</td><td class="cn">形式化验证</td><td class="desc">用数学证明让 AI 推理每一步可验证——洪乐潼的 Axiom 的核心</td></tr>
-<tr><td class="name eng">World Model</td><td class="cn">世界模型</td><td class="desc">AI 对物理/因果/物体行为的内部模拟，不只是预测下一个 token</td></tr>
-<tr><td class="name eng">Continual Learning</td><td class="cn">持续学习</td><td class="desc">部署后像人一样持续学新东西，不发生灾难性遗忘</td></tr>
-<tr><td class="name eng">System 2 Reasoning</td><td class="cn">系统 2 推理</td><td class="desc">慢思考——多步逻辑、规划、一致性检查，不是一次生成</td></tr>
-<tr><td class="name eng">Scaling Law</td><td class="cn">规模定律</td><td class="desc">模型越大能力越强，但 Hassabis 认为纯 scaling 不够</td></tr>
-<tr><td class="name eng">Distillation</td><td class="cn">模型蒸馏</td><td class="desc">小模型学大模型的输出——Moonshot 被指控对 Claude 做了 340 万次</td></tr>
-<tr><td class="name eng">RLHF</td><td class="cn">人类反馈强化学习</td><td class="desc">用人类偏好训练模型"对齐"，让它更符合人的期望</td></tr>
-<tr><td class="name eng">RAG</td><td class="cn">检索增强生成</td><td class="desc">先搜索相关知识再生成回答，减少 AI 幻觉</td></tr>
-<tr><td class="name eng">ASIC</td><td class="cn">专用集成电路</td><td class="desc">为特定 AI 任务定制芯片，比通用 GPU 省电，经济上已成立</td></tr>
-<tr><td class="name eng">Context Window</td><td class="cn">上下文窗口</td><td class="desc">模型一次能"记住"的文本长度，目前可达 128K–1M tokens</td></tr>
-<tr><td class="name eng">MFU</td><td class="cn">模型 FLOPS 利用率</td><td class="desc">GPU 实际利用率通常才 50%，通用 GPU 浪费一半算力</td></tr>
-<tr><td class="name eng">ARC-AGI</td><td class="cn">通用智能评测</td><td class="desc">Chollet 的 AGI 测试——交互式推理，顶级模型 <1%，普通人 100%</td></tr>
-</table>
+<div class="guide-box">
+  <p><strong>🔗 跨篇连线</strong><br>
+  人类最难做到的事——AI 帮你同时记千万字，做模式匹配。<br>
+  例：「罗福莉的 Agent 框架和 Hassabis 的自举效应是同一回事吗？」</p>
 </div>
 
-<div class="group">
-<h3>🏢 商业 / 产业概念</h3>
-<table>
-<tr><th>英文</th><th>中文</th><th>一句话解释</th></tr>
-<tr><td class="name eng">Shipping Cadence</td><td class="cn">发布节奏</td><td class="desc">产品从想法到上线的周期（Anthropic：从月到周到 1 天）</td></tr>
-<tr><td class="name eng">AI Washing</td><td class="cn">AI 洗白</td><td class="desc">用 AI 概念包装传统商业决策，如把裁员说成"AI 提升效率"</td></tr>
-<tr><td class="name eng">VIE</td><td class="cn">可变利益实体</td><td class="desc">中国公司海外上市的壳架构——Moonshot 等正在拆掉它</td></tr>
-<tr><td class="name eng">Singapore Washing</td><td class="cn">新加坡洗壳</td><td class="desc">以新加坡为跳板转移中国 AI 资产，被北京明确禁止</td></tr>
-<tr><td class="name eng">Research Preview</td><td class="cn">研究预览</td><td class="desc">Anthropic 做法：先发布不完美功能收集反馈，快速迭代</td></tr>
-</table>
+<div class="guide-box">
+  <p><strong>📚 单点深挖</strong><br>
+  日报里一笔带过的概念，背后可能有一整篇访谈。<br>
+  例：「自举效应到底是什么？用罗福莉和 Hassabis 的例子讲透」</p>
 </div>
 
-<p class="note">每次打开这页，按 <code>⌘F</code> 搜索人名或概念就能直接定位。</p>
+<div class="guide-box">
+  <p><strong>🎯 找弹药</strong><br>
+  你有一个判断或决策方向，我进库找正反论据。<br>
+  例：「中国 AI 出海还有没有机会——从库里找五个人的相关看法」</p>
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<h2 id="asking">二、怎么问出好问题</h2>
+<div class="section-desc">核心原则：别问「他说了什么」——问「这跟那个有什么关系」</div>
+
+<div class="question-type">
+  <h4>第一类：是同一个东西吗？</h4>
+  <p>两个人用了不同的词，但可能在说同一件事。</p>
+  <p class="example">罗福莉的「Agent 激发能力」和 Hassabis 的「自举效应」是同一回事吗？</p>
+</div>
+
+<div class="question-type">
+  <h4>第二类：矛盾还是互补？</h4>
+  <p>两个人看起来在说反话，但可能各自只对了一半。</p>
+  <p class="example">Cat Wu 说产品要一天上线，罗福莉说团队无 deadline——谁对？还是各对一半？</p>
+</div>
+
+<div class="question-type">
+  <h4>第三类：换个场景还成立吗？</h4>
+  <p>拿一个人的框架，放到另一个人的处境里，看它站不站得住。</p>
+  <p class="example">a16z 的资本飞轮放到中国 AI 现在的 VIE 困局里，还转得动吗？</p>
+</div>
+
+<div class="question-type">
+  <h4>第四类：谁能解释谁？</h4>
+  <p>用 A 的理论去解释 B 的行为，看能不能说通。</p>
+  <p class="example">黄仁勋的供应链焦虑，能解释 DeepSeek 为什么要开源吗？</p>
+</div>
+
+<div class="question-type">
+  <h4>第五类：缺了什么？</h4>
+  <p>找出盲点——知识库里没有人讨论但应该讨论的问题。</p>
+  <p class="example">70+ 个人物里，没有一个人讨论 AI 对教育的影响——是漏了还是故意避开？</p>
+</div>
+
+<div class="guide-box" style="margin-top:24px;">
+  <p><strong>三句话总结</strong><br>
+  1. 别问「他说了什么」，问「这跟那个有什么关系」<br>
+  2. 别只找相同，找张力——矛盾比共识更有营养<br>
+  3. 问完关系之后加一句「这意味着什么」——别停在描述</p>
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<h2 id="people">三、人名索引</h2>
+
+<h3>核心人物</h3>
+<table>
+<tr><th>人物</th><th>身份</th><th>关注理由</th></tr>
+<tr><td>Andrej Karpathy<span class="en">安德烈·卡帕西</span></td><td>前 OpenAI/Tesla AI 负责人</td><td>Software 3.0 提出者</td></tr>
+<tr><td>Sam Altman<span class="en">山姆·奥特曼</span></td><td>OpenAI CEO</td><td>AI 行业风向标</td></tr>
+<tr><td>Dario Amodei<span class="en">达里奥·阿莫迪</span></td><td>Anthropic CEO</td><td>AI 安全旗手</td></tr>
+<tr><td>Jensen Huang<span class="en">黄仁勋</span></td><td>NVIDIA CEO</td><td>算力王者，供应链核心</td></tr>
+<tr><td>Demis Hassabis<span class="en">德米斯·哈萨比斯</span></td><td>Google DeepMind CEO</td><td>自举效应、世界模型</td></tr>
+<tr><td>Ilya Sutskever<span class="en">伊利亚·苏茨克维</span></td><td>SSI 创始人，前 OpenAI 首席科学家</td><td>SSI=安全超级智能，极度低调</td></tr>
+<tr><td>Elon Musk<span class="en">埃隆·马斯克</span></td><td>xAI/Tesla/SpaceX</td><td>算力军备竞赛</td></tr>
+</table>
+
+<h3>技术/研究</h3>
+<table>
+<tr><th>人物</th><th>身份</th><th>关注理由</th></tr>
+<tr><td>François Chollet<span class="en">弗朗索瓦·肖莱</span></td><td>ARC Prize Foundation 创始人</td><td>AGI 评测，顶级模型全灭</td></tr>
+<tr><td>David Silver<span class="en">大卫·席尔瓦</span></td><td>Ineffable Intelligence 创始人，AlphaGo 之父</td><td>$11亿种子轮，模拟环境自主学习</td></tr>
+<tr><td>Jim Fan<span class="en">范嘉辉</span></td><td>NVIDIA 具身智能负责人</td><td>机器人 + AI</td></tr>
+<tr><td>Andrew Ng<span class="en">吴恩达</span></td><td>DeepLearning.AI</td><td>AI 教育布道者</td></tr>
+<tr><td>Greg Brockman<span class="en">格雷格·布罗克曼</span></td><td>OpenAI 总裁</td><td>工程文化</td></tr>
+<tr><td>陶哲轩<span class="en">Terence Tao</span></td><td>数学家</td><td>AI + 数学前沿</td></tr>
+</table>
+
+<h3>中国 AI</h3>
+<table>
+<tr><th>人物</th><th>身份</th><th>关注理由</th></tr>
+<tr><td>梁文锋</td><td>DeepSeek 创始人</td><td>开源冲击定价</td></tr>
+<tr><td>杨植麟</td><td>Moonshot AI 创始人</td><td>VIE 解散回归中国</td></tr>
+<tr><td>罗福莉</td><td>小米大模型负责人</td><td>Agent 实战派</td></tr>
+<tr><td>唐杰</td><td>智谱AI</td><td>GLM-5V-Turbo</td></tr>
+<tr><td>肖弘</td><td>Manus AI 创始人</td><td>中国 Agent 产品</td></tr>
+</table>
+
+<h3>产品/资本/其他</h3>
+<table>
+<tr><th>人物</th><th>身份</th><th>关注理由</th></tr>
+<tr><td>Cat Wu<span class="en">卡特·吴</span></td><td>Anthropic 产品负责人</td><td>Shipping 方法论</td></tr>
+<tr><td>Aravind Srinivas<span class="en">阿拉文德·斯里尼瓦斯</span></td><td>Perplexity CEO（AI搜索引擎）</td><td>挑战 Google</td></tr>
+<tr><td>Martin Casado<span class="en">马丁·卡萨多</span></td><td>a16z 合伙人</td><td>资本飞轮</td></tr>
+<tr><td>Sarah Wang<span class="en">莎拉·王</span></td><td>a16z 增长投资合伙人</td><td>AI 投资逻辑</td></tr>
+<tr><td>洪乐潼<span class="en">Carina Hong</span></td><td>Axiom 创始人（00后）</td><td>形式化验证，$16亿估值</td></tr>
+<tr><td>Mark Zuckerberg<span class="en">马克·扎克伯格</span></td><td>Meta CEO</td><td>开源策略</td></tr>
+<tr><td>汪滔</td><td>大疆创始人</td><td>硬件 + AI</td></tr>
+<tr><td>快刀青衣</td><td>知识库创建者，得到联合创始人</td><td>AI 行业记录者</td></tr>
+</table>
+
+<!-- ════════════════════════════════════════════ -->
+<h2 id="concepts">四、概念索引</h2>
+
+<table>
+<tr><th>中文</th><th>英文</th><th>一句话</th></tr>
+<tr><td>自举效应</td><td>Bootstrap Effect</td><td>好模型帮你造更好的模型，飞轮越转越快</td></tr>
+<tr><td>资本飞轮</td><td>Capital Flywheel</td><td>融资→算力→突破→产品→用户→更大融资</td></tr>
+<tr><td>软件 3.0</td><td>Software 3.0</td><td>上下文窗口即程序，AI 写代码人审查</td></tr>
+<tr><td>形式化验证</td><td>Formal Verification</td><td>用数学证明让 AI 推理每一步可验证</td></tr>
+<tr><td>世界模型</td><td>World Model</td><td>理解物理/因果/物体行为的内部模拟</td></tr>
+<tr><td>持续学习</td><td>Continual Learning</td><td>部署后持续学新东西，不发生灾难性遗忘</td></tr>
+<tr><td>智能体工程</td><td>Agentic Engineering</td><td>从写代码变成委派"宏操作"给 AI Agent</td></tr>
+<tr><td>规模定律</td><td>Scaling Law</td><td>更大模型 + 更多数据 = 更强能力</td></tr>
+<tr><td>VIE</td><td>Variable Interest Entity</td><td>中国公司海外上市的壳架构（正在被拆）</td></tr>
+<tr><td>新加坡洗壳</td><td>"Singapore washing"</td><td>以新加坡为跳板转移中国 AI 资产</td></tr>
+<tr><td>AI 洗白</td><td>AI washing</td><td>用 AI 概念包装传统商业决策（如裁员）</td></tr>
+<tr><td>ARC-AGI</td><td>—</td><td>Chollet 的 AGI 测试，顶级模型 <1%，人类 100%</td></tr>
+<tr><td>模型蒸馏</td><td>Distillation</td><td>用小模型学大模型的输出</td></tr>
+<tr><td>氛围编程</td><td>Vibe Coding</td><td>用自然语言让 AI 写代码，不关心实现细节</td></tr>
+<tr><td>系统 2 推理</td><td>System 2 Reasoning</td><td>慢思考：多步逻辑、规划、一致性检查</td></tr>
+<tr><td>RLHF</td><td>Reinforcement Learning from Human Feedback</td><td>用人偏好训练模型对齐</td></tr>
+<tr><td>ASIC</td><td>Application-Specific Integrated Circuit</td><td>为特定 AI 任务定制芯片</td></tr>
+<tr><td>上下文窗口</td><td>Context Window</td><td>模型一次能"记住"的文本长度</td></tr>
+<tr><td>RAG</td><td>Retrieval-Augmented Generation</td><td>先搜相关资料再生成回答，减少幻觉</td></tr>
+<tr><td>发布节奏</td><td>Shipping Cadence</td><td>产品从想法到上线的时间（Anthropic：1天）</td></tr>
+</table>
+
+<p style="text-align:center; color:#999; margin-top:48px; font-size:13px;">
+  快刀青知识库 · 高质量人类谈话库 · 整理于 2026-05-04
+</p>
 
 </div>
 </body>
